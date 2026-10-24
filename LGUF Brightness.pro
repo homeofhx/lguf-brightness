@@ -30,7 +30,7 @@ unix {
 win32 {
     isEmpty(LIBUSB_DIR): LIBUSB_DIR = $$PWD/libusb
 
-    INCLUDEPATH += $${LIBUSB_DIR}/include/libusb-1.0
+    INCLUDEPATH += $${LIBUSB_DIR}/include
 
     contains(QT_ARCH, x86_64) {
         LIBS += $${LIBUSB_DIR}/MinGW64/static/libusb-1.0.a
